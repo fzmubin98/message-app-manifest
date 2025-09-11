@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+  namespace: message-app
+data:
+  MONGO_URL: "mongodb://mongoroot:securepass@mongo:27017/messages?authSource=admin" #&replicaSet=rs0"
